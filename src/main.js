@@ -4,6 +4,7 @@ var Home = require('./components/homePage');
 var Authors = require('./components/authors/authorPage');
 var About = require('./components/about/aboutPage');
 var Header = require('./components/common/header');
+import { Components as PCFComponents } from 'platform-common-frontend'
 
 (function (win) {
 	"use strict";
@@ -21,6 +22,7 @@ var Header = require('./components/common/header');
 				<div>
 					<Header />
 					<Child />
+					<PCFComponents.Badge title="My Title" className="myClassName" />
 				</div>
 			);
 
